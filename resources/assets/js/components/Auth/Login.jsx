@@ -31,15 +31,15 @@ class Login extends Component
                             </div>
 
                             <div>
-                                <a className="block text-sm text-primary hover:underline "
-                                   href="http://localhost:8000/password/reset">
+                                <NavLink className="block text-sm text-primary hover:underline "
+                                   to="/recover">
                                     Forgot Your Password?
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                         <div className="flex items-center justify-between mt-5">
                             <label className="block">
-                                <NavLink type="button" className="text-center bg-secondary p-2 rounded shadow max-w-xs w-48 text-white font-semibold" to="/registration">Registration</NavLink>
+                                <NavLink type="button" className="text-center bg-secondary p-2 rounded shadow max-w-xs w-48 text-white font-semibold" to="/register">Registration</NavLink>
                             </label>
                             <label className="block">
                                 <button type="submit" className="text-center bg-primary p-2 rounded shadow max-w-xs w-48 text-white font-semibold">Sign me in</button>

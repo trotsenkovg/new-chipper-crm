@@ -3,11 +3,14 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import LoginPage from "../pages/Auth/LoginPage/index"
 import Registration from "../components/Auth/Registration";
+import RecoverPassword from "../components/Auth/RecoverPassword";
 
 const guestRoutes = [
-    { path: "/", component: LoginPage, exact: true },
-    { path: "/register", component: Registration, exact: true },
+    {path: "/login", component: LoginPage, exact: true},
+    {path: "/register", component: Registration, exact: true},
+    {path: "/recover", component: RecoverPassword, exact: true}
 ];
+
 /*const privateRoutes = [
     { path: "/dashboard", component: Dashboard, exact: true}
 ];*/
