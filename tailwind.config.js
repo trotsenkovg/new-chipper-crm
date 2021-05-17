@@ -1,18 +1,23 @@
 const defaultTheme = require("tailwindcss");
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: false,
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        'primary': '#fe5900',
+        'secondary': '#d9770e',
+        'neutral': ''
+      },
       backgroundImage: theme => ({
-        'rinnegan': "url('/assets/img/6fc8e5b971565a7bb7b5c123c44ed1ce.jpg')",
-        'japan': "url('/assets/img/1YhZlK.jpg')"
+        'logo': "url('/assets/img/logo-chipper.svg')"
       })
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'),],
 }
