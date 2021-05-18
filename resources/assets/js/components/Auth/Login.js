@@ -14,11 +14,11 @@ class Login extends Component
                         <input type="hidden" name="_token" value="96LGLQC0ylNCwHDLyTqFuBvSMwOqHi7voLu8lwj4"/>
                         <label className="block">
                             <span className="text-sm font-bold">E-mail</span>
-                            <input type="text" required name="email" className="form-input mt-1 block w-full rounded-md border-yellow-600"/>
+                            <input type="text" placeholder={"Enter email"} required name="email" className="form-input mt-1 block w-full rounded-md border-yellow-600"/>
                         </label>
                         <label className="block my-5">
                             <span className="text-sm font-bold">Password</span>
-                            <input type="password" required name="password" className="form-input mt-1 block w-full rounded-md border-yellow-600"/>
+                            <input type="password" required placeholder={"Enter password"} name="password" className="form-input mt-1 block w-full rounded-md border-yellow-600"/>
                         </label>
                         <div className="flex justify-between items-center mt-4">
                             <div>

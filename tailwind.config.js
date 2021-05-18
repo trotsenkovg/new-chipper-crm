@@ -2,14 +2,17 @@ const defaultTheme = require("tailwindcss");
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: false,
+  purge: [
+      './resources/assets/js/**/*.js',
+    './resources/assets/js/**/**/*.js',
+      './resources/assets/js/*.js'
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
         'primary': '#fe5900',
         'secondary': '#d9770e',
-        'neutral': ''
       },
       backgroundImage: theme => ({
         'logo': "url('/assets/img/logo-chipper.svg')"

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
-import LoginPage from "../pages/Auth/LoginPage/index"
+import LoginPage from "../pages/Auth/LoginPage"
 import Registration from "../components/Auth/Registration";
 import RecoverPassword from "../components/Auth/RecoverPassword";
 
