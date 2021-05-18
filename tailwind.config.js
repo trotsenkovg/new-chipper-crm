@@ -3,9 +3,9 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [
+    './resources/assets/js/*.js',
     './resources/assets/js/**/*.js',
     './resources/assets/js/**/**/*.js',
-    './resources/assets/js/*.js',
     './resources/views/app.blade.php'
   ],
   darkMode: 'class', // or 'media' or 'class'
