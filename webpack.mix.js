@@ -15,4 +15,4 @@ mix.js('resources/assets/js/app.js', 'public/assets/js')
     .react()
     .postCss('resources/assets/css/app.css', 'public/assets/css', [
         require("tailwindcss")
-    ]);
+    ]).version();
