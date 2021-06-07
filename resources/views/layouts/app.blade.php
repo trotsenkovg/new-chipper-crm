@@ -7,8 +7,8 @@
     <title>Chipper CRM</title>
     <link rel="stylesheet" href="{{ mix('assets/css/app.css') }}">
 </head>
-<body class="bg-yellow-600 bg-opacity-5 font-sans">
-<div id="app"></div>
+<body class="container mx-auto bg-yellow-600 bg-opacity-5 font-sans">
+@yield('content')
 <script type="text/javascript" src="{{ mix('assets/js/app.js') }}"></script>
 </body>
 </html>

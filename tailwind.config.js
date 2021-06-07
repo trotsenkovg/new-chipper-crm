@@ -6,7 +6,8 @@ module.exports = {
     './resources/assets/js/*.js',
     './resources/assets/js/**/*.js',
     './resources/assets/js/**/**/*.js',
-    './resources/views/app.blade.php'
+    './resources/views/*.php',
+    './resources/views/**/*.php',
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {

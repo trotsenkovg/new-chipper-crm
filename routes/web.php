@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/{path?}', 'app')
-    ->where('path', '.*')
-    ->name('react');
+Auth::routes();
+
+Route::group(["middleware" => 'auth'], function () {
+    Route::get('/', 'HomeController@index')->name('Home');
+});
